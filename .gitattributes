@@ -1,1 +1,2 @@
- ./MovieTicketBooking/DatabaseScripts/* linguist-vendored
+special-vendored-path/* linguist-vendored
+*.sql linguist-vendored=false
