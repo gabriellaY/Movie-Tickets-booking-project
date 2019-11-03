@@ -1,0 +1,29 @@
+body {
+    background-color:#E0F2F1;
+}
+
+#wrapper {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 10em;
+    margin-left: 10em;
+}
+
+#formContainer {
+    max-width: 50%;
+    margin: 100;
+    display: block;
+    box-shadow: 10px 10px 5px #d8dbe2;
+}
+
+#registerButton {
+    background-color:#424242;
+    color: white
+}
+
+#homePicture {
+    position: fixed; 
+    bottom: -1.7em;
+    right: 3em;
+}

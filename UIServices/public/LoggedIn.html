@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book movie tickets</title>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/node_modules\jquery\dist\jquery.min.js" rel="stylesheet" />
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script src="LoggedIn.js"></script>
+    <script src="Booking.js"></script>
+    <script src="MoviesInformation.js"></script>
+    <script src="OptionsInformation.js"></script>
+    <script src="Authentication.js"></script>
+    <script src="JwtParsing.js"></script>
+    <script src="Account.js"></script>
+    <script type="text/javascript" src="UrlConfiguration.js"></script>
+
+    <link rel="stylesheet" href="LoggedIn.css">
+
+    <link rel="icon" type="image/png" href="images/cartoon-1293990_1280.png">
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+</head>
+
+<body style="background-color:#F0F8FF; overflow-x: hidden;" onload="start()">
+
+    <nav class="navbar fixed-top bg-dark">
+        <img src="images/movieIcon.png" width="30" height="30" class="d-inline-block align-top">
+        <div id="theaterButtons" class="btn-toolbar justify-content-between mr-auto" role="toolbar">
+            <div class="btn-group mr-5" role="group">
+
+                <div class="btn-group mr-5" role="group">
+                    <button type="button" class="btn btn-secondary" onclick="getMovies()">Movies</button>
+                </div>
+
+                <div class="btn-group mr-5" id="buttonsGroup" role="group">
+                    <button type="button" class="btn btn-secondary" onclick="getTheatersByCity()">Movie
+                        theaters</button>
+                </div>
+
+                <div class="btn-group mr-5" id="buttonsGroup" role="group">
+                    <select class="btn btn-secondary" id="selectCityDropdown"> </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+
+            <p id="todaysDate"><b> </b></p>
+
+            <script>
+                $('#todaysDate').append(date);
+            </script>
+
+            <a class="dropdown-toggle pt-1 mr-3" data-toggle="dropdown">
+                <img src="images/accountImg.png" width="30" height="30" class="d-inline-block align-center">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    <div class="navbar-login">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p class="text-center">
+                                    <span>
+                                        <img src="images/accountImg.png" height="100"
+                                            class="d-inline-block align-center pb-3">
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-left pl-2"><b id="username"></b></p>
+                                <p class="text-left small pl-2"><b id="email"></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="navbar-login navbar-login-session">
+                        <div class="row d-flex justify-content-end mx-3">
+                            <div class="btn " role="group">
+                                <a type="button" class="btn btn-secondary btn-sm" onclick="setEmailInEditForm()"
+                                    href="Account.html">
+                                    <img src="images/settings.png" width="20" height="20"
+                                        class="d-inline-block align-right"> Edit account</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="btn btn-outline-secondary float-right" style="color: white" href="index.html"
+                onclick="logout()">Log
+                out</a>
+        </div>
+
+    </nav>
+
+    <div id="mainContainer">
+
+
+    </div>
+
+    <script>
+
+        const user = parseJwt(window.localStorage.getItem('jwt'));
+
+        $('#username').append(user.unique_name);
+
+        getUserEmail(user.unique_name);
+
+    </script>
+
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+
+                </div>
+                <div id="footer" class="modal-footer">
+                    <p id="emailMsg"><i></i></p>
+                    <button id="modalButton" type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+</body>
+
+</html>

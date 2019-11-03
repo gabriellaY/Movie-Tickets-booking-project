@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book movie tickets</title>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/node_modules\jquery\dist\jquery.min.js" rel="stylesheet" />
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+    <script src="Authentication.js"></script>
+    <script src="Account.js"></script>
+    <script type="text/javascript" src="UrlConfiguration.js"></script>
+
+    <link rel="stylesheet" href="HomePageStyles.css">
+    <link rel="icon" type="image/png" href="images/cartoon-1293990_1280.png">
+
+</head>
+
+<body style="background-color:#F0F8FF;">
+    <nav class="navbar  fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="images/movieIcon.png" width="30" height="30" class="d-inline-block align-top">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a class="btn btn-outline-secondary float-right" style="color: white" href="index.html">Log in<img src="images/loginIcon.png" width="25" height="25" class="d-inline-block align-left"></a>
+                <a class="btn btn-outline-secondary float-right" style="color: white"
+                    href="RegisterForm.html">Register<img src="images/register.png" width="25" height="25" class="d-inline-block align-right"></a>
+            </div>
+        </a>
+    </nav>
+
+    <div id="wrapper">
+        <div id="formContainer" class="container">
+            <div id="formRow" class="row">
+                <div class="col">
+                    <p class="h1" style="font-family:Monospace;">Log in</p>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="InputUsername">Username</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <a id="loginButton" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#modal" onclick="login()"
+                            type="butoon">Login</a>
+                        <div>
+                            <span class="psw mt-10">Do not have an account? <a href="RegisterForm.html">Create
+                                    one</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img id="homePicture" class="float-right" src="images/homePagePicture.png">
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div id = "modalHeader" class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+
+                </div>
+                <div id="footer" class="modal-footer">
+                    <p id="emailMsg"><i></i></p>
+                    <button id="modalButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+</body>

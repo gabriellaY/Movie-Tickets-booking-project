@@ -1,0 +1,5 @@
+There are two scripts for the data base for the program, one for the creation and one for the population.
+
+1) First have to be executed the script for the creation of the data base.
+
+2) Second have to be executed the script for the population.

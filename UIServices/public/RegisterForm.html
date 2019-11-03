@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book movie tickets</title>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/node_modules\jquery\dist\jquery.min.js" rel="stylesheet" />
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="Authentication.js"></script>
+
+    <link rel="icon" type="image/png" href="images/movieIcon.png">
+    <link rel="stylesheet" href="RegisterStyles.css">
+
+</head>
+
+<body style="background-color:#F0F8FF;">
+
+    <nav class="navbar fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="images/movieIcon.png" width="30" height="30" class="d-inline-block align-top">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a class="btn btn-outline-secondary float-right" style="color: white" href="index.html">Log in</a>
+                <a class="btn btn-outline-secondary float-right" style="color: white"
+                    href="RegisterForm.html">Register</a>
+            </div>
+        </a>
+    </nav>
+
+    <div id="wrapper">
+        <div id="formContainer" class="container" lass="mx-auto" style="background-color:#A8BCD1">
+            <p class="h1" style="font-family:Monospace;">Create account</p>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Confirm password</label>
+                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm password">
+                </div>
+                <a id="registerButton" class="btn btn-primary btn-sm btn-block" data-toggle="modal" data-target="#modal" onclick="register()"
+                    role="button">Register</a>
+                <div>
+                    <span class="psw"> Alreaday have an account? <a href="index.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <img id="homePicture" class="float-right" src="images/homePagePicture.png">
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div id = "modalHeader" class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+
+                </div>
+                <div id="footer" class="modal-footer">
+                    <p id="emailMsg"><i></i></p>
+                    <button id="modalButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+</body>

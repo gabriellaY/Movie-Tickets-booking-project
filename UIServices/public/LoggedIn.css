@@ -1,0 +1,240 @@
+
+#theaterButtons {
+    margin-left: 1em;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#moviesOnScreen {
+    font-family: Lobster;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-right: 20em;
+}
+
+#page {
+  color: black;
+  background-color: transparent;
+}
+
+#todaysDate {
+  color: white;
+  position: absolute;
+  right: 10em;
+  top: 0.5em;
+}
+
+#paging {
+  margin-right: 36em;
+  margin-top: 5em;
+}
+
+#movieTable {
+    margin-top: 2em;
+    margin-right: 5em;
+
+    background-color: #b0c2d5;
+    box-shadow: 10px 10px 5px #d8dbe2;
+}
+
+#moviesContainer {
+    margin-top: 3em;
+    margin-right: 3em;
+}
+
+#summaryButton {
+    color: black;
+    background-color: #F0F8FF;
+}
+
+#moviesButton {
+    margin-left: 0em;
+}
+
+#moviesHeading {
+    margin-top: 3em;
+    margin-right: 5em;
+    font-family: "Lobster";
+}
+
+#clapperboarPicture {
+    margin-top: 20em;
+    margin-left: 2em;
+}
+
+#right {
+    flex: 2;
+    float: right;
+  }
+  
+#left {
+    flex: 1;
+    float: left;
+  } 
+
+  #accordion {
+      margin-top: 10em;
+      width: 25em;
+      box-shadow: 10px 10px 5px #d8dbe2;
+  }
+
+  .card {
+      background-color: #b0c2d5;
+  }
+
+  #title {
+    font-weight: bold;
+    color: black;
+  }
+
+  #category {
+    font-weight: bold;
+    color: black;
+  }
+
+  #genre {
+    font-weight: lighter;
+  }
+
+  #theaterMoviesAndTimetable {
+      margin-left: 0em;
+  }
+
+  #movieTimetableCol {
+    font-weight: bold;
+    margin-top: 10em;
+  }
+
+  #theatersCol {
+      flex: 2
+  }
+
+  #timetable {
+      margin-top:5em;
+      font-weight: bold;
+  }
+
+  #timetableHeading{
+      margin: auto;
+      text-align: center;
+  }
+
+  #timetableTitle {
+      padding-top: 1em;
+  }
+
+  #radioBtn {
+      margin-left: 2em; 
+  }
+
+  #categoriesDescription {
+    margin-top: 5em;
+    padding-left: 3em;
+    display: none;
+    font-weight: lighter;
+    text-align: left;
+  }
+
+  #date {
+    margin-top: 2em;
+    margin-left: 2em;
+  }
+
+  #monthCol {
+      flex: 0;
+  }
+
+  #dayCol {
+      flex: 0;
+  }
+
+   #ticketTypeCol {
+      flex: 1;
+  } 
+
+  #selectMonthOption {
+      padding-left: 2em;
+  }
+
+  #dateTag {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  #ticketTag {
+    font-weight: bold;
+    color: black;
+  }
+
+  #numberOfTicketsTag {
+    font-weight: bold;
+    color: black;
+  }
+
+  #ticketTypes {
+    margin-top: 1em;
+    padding-left: 1em;
+    display: none;
+    font-weight: lighter;
+    text-align: left;
+  }
+
+  #selectDayDropdown {
+      margin-right: 0em;
+  }
+
+  #timetableCol {
+      flex: 2;
+  }
+
+   #bookCol {
+    flex: 1;
+  }
+
+  #timetables {
+    flex: 2;
+  } 
+
+  #ticketTypeContainer {
+    margin-right: 10em;
+    margin-top: 5em;
+    font-weight: bold;
+    }
+
+   #chooseTicketHeading {
+    text-align: center;
+    margin-top: 5em;
+  } 
+
+   #bookButton {
+    margin-top: 10em;
+  } 
+
+  #deadpool {
+    position: fixed;
+    bottom: 0.7em;
+    right: 12em;
+  }
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+
+.dropdown-menu {
+    text-align: left;
+}

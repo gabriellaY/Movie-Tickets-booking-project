@@ -1,0 +1,33 @@
+body {
+    background-color:#E0F2F1;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    margin-top: 10em;
+    margin-left: 10em;
+}
+
+#formContainer {
+    max-width: 50%;
+    margin-bottom: 10em;
+    display: block;
+    box-shadow: 10px 10px 5px #d8dbe2;
+}
+
+#formRow {
+    background-color:#A8BCD1;
+    height: max-content;
+}
+
+#homePicture {
+    position: fixed; 
+    bottom: 0.3em;
+    right: 3em;
+}
+
+#loginButton {
+    background-color:#424242;
+    color: white
+}

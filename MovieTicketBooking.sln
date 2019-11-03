@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTicketBooking", "MovieTicketBooking\MovieTicketBooking.csproj", "{EA1397DE-7944-462A-8E55-D1DE644C2DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTicketBooking.test", "MovieTicketBooking.test\MovieTicketBooking.test.csproj", "{3EC6CB1E-4292-47DE-A533-69BF5FE3DA09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1397DE-7944-462A-8E55-D1DE644C2DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1397DE-7944-462A-8E55-D1DE644C2DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1397DE-7944-462A-8E55-D1DE644C2DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1397DE-7944-462A-8E55-D1DE644C2DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC6CB1E-4292-47DE-A533-69BF5FE3DA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC6CB1E-4292-47DE-A533-69BF5FE3DA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC6CB1E-4292-47DE-A533-69BF5FE3DA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC6CB1E-4292-47DE-A533-69BF5FE3DA09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAAA63AE-FE9C-4DC7-B251-539C9E801AE8}
+	EndGlobalSection
+EndGlobal
